@@ -1,7 +1,7 @@
 const router = require('express').Router();
 
 router.get('/',(req,res)=>{  
-    res.render('user/home/index',{
+    res.render('home/index',{
         layout:'layouts/user_layout',
         title:'Home index'      
     });
