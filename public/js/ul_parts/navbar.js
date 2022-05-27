@@ -1,167 +1,163 @@
 const navbar = document.getElementById('navbar');
 
 const nav = React.createElement(
-
-    'div', {
-    className: 'topbar-area'
-},
-    React.createElement(
-        'div', {
-        className: 'container'
+    'div',{
+        className:'container nav-container'
     },
-        React.createElement(
-            'div', {
-            className: 'row justify-content-center'
+    React.createElement(
+        'div',{
+            className:'responsive-mobile-menu'
         },
-            React.createElement(
-                'div', {
-                className: 'col-lg-6 col-md-7 align-self-center'
+        React.createElement(
+            'div',{
+                className:'logo d-lg-none d-block'
             },
-                React.createElement(
-                    'div', {
-                    className: 'topbar-menu text-md-left text-center'
+            React.createElement(
+                'a',{
+                    className:'main-logo',
+                    href:'/'
                 },
-                    React.createElement(
-                        'ul', {
-                        className: 'align-self-center'
+                React.createElement(
+                    'img',{
+                        src:'assets/img/logo.png',
+                        alt:'img'
+                    }
+                )
+            )
+        ),
+        React.createElement(
+            'button',{
+                className:'menu toggle-btn d-block d-lg-none',
+                data_target:'#nextpage_main_menu',
+                aria_expanded:'false',
+                aria_label:'Toggle navigation'
+            },
+            React.createElement(
+                'span',{
+                    className:'icon-left'
+                }
+            ),
+            React.createElement(
+                'span',{
+                    className:'icon-right'
+                }
+            )
+        )
+    ),
+    React.createElement(
+        'div',{
+            className:'nav-right-part nav-right-part-mobile'
+        },
+        React.createElement(
+            'a',{
+                className:'search header-search',
+                href:'#'
+            },
+            React.createElement(
+                'i',{
+                    className:'fa fa-search'
+                }
+            )
+        )
+    ),
+    React.createElement(
+        'div',{
+            className:'collapse navbar-collapse',
+            id:'nextpage_main_menu'            
+        },
+        React.createElement(
+            'ul',{
+                className:'navbar-nav menu-open'
+            },
+            React.createElement(
+                'li',{
+                    className:'current-menu-item'
+                },
+                React.createElement(
+                    'a',{
+                        href:'#banner'
                     },
-                        React.createElement(
-                            'li', null,
-                            React.createElement(
-                                'a', {
-                                href: '#'
-                            }, 'Author'
-                            )
-                        ),
-                        React.createElement(
-                            'li', null,
-                            React.createElement(
-                                'a', {
-                                href: '#'
-                            }, 'Advertisment'
-                            )
-                        ),
-                        React.createElement(
-                            'li', null,
-                            React.createElement(
-                                'a', {
-                                href: '#'
-                            }, 'Member'
-                            )
-                        ),
-                        React.createElement(
-                            'li', null,
-                            React.createElement(
-                                'a', {
-                                href: '#'
-                            }, 'Sitemap'
-                            )
-                        )
-
-                    )
+                    React.createElement(
+                        'i',{
+                            className:'fa fa-home'
+                        }
+                    ),  
+                    'Home'
                 )
             ),
             React.createElement(
-                'div',{
-                    className:'col-lg-6 col-md-5 mt-2 mt-md-0 text-md-right text-center'
+                'li',{
+                    className:'current-menu-item'
                 },
                 React.createElement(
-                    'div',{
-                        className:'topbar-social'
-                    },
-                    React.createElement(
-                        'div',{
-                            className:'topbar-date d-none d-lg-inline-block'
-                        },
-                        React.createElement(
-                            'i',{
-                                className:'fa fa-calendar'
-                            }
-                        ),'Saturday, October 7'
-                    ),
-                    React.createElement(
-                        'ul',{
-                            className:'social-area social-area-2'
-                        },
-                        React.createElement(
-                            'li',null,
-                            React.createElement(
-                                'a',{
-                                    className:'facebook-icon',
-                                    href:'#'
-                                },
-                                React.createElement(
-                                    'i',{
-                                        className:'fa fa-facebook'
-                                    }
-                                )
-                            )
-                        ),
-                        React.createElement(
-                            'li',null,
-                            React.createElement(
-                                'a',{
-                                    className:'twitter-icon',
-                                    href:'#'
-                                },
-                                React.createElement(
-                                    'i',{
-                                        className:'fa fa-twitter'
-                                    }
-                                )
-                            )
-                        ),
-                        React.createElement(
-                            'li',null,
-                            React.createElement(
-                                'a',{
-                                    className:'youtube-icon',
-                                    href:'#'
-                                },
-                                React.createElement(
-                                    'i',{
-                                        className:'fa fa-youtube-play'
-                                    }
-                                )
-                            )
-                        ),
-                        React.createElement(
-                            'li',null,
-                            React.createElement(
-                                'a',{
-                                    className:'instagram-icon',
-                                    href:'#'
-                                },
-                                React.createElement(
-                                    'i',{
-                                        className:'fa fa-instagram'
-                                    }
-                                )
-                            )
-                        ),
-                        React.createElement(
-                            'li',null,
-                            React.createElement(
-                                'a',{
-                                    className:'google-icon',
-                                    href:'#'
-                                },
-                                React.createElement(
-                                    'i',{
-                                        className:'fa fa-google-plus'
-                                    }
-                                )
-                            )
-                        ),
-
-                    )
+                    'a',{
+                        href:'#trending'
+                    },                   
+                    'Trending News'
+                )
+            ),
+            React.createElement(
+                'li',{
+                    className:'current-menu-item'
+                },
+                React.createElement(
+                    'a',{
+                        href:'#latest'
+                    },                   
+                    'Latest News'
+                )
+            ),
+            React.createElement(
+                'li',{
+                    className:'current-menu-item'
+                },
+                React.createElement(
+                    'a',{
+                        href:'#grid'
+                    },                   
+                    'News Grid'
+                )
+            ),
+            React.createElement(
+                'li',{
+                    className:'current-menu-item'
+                },
+                React.createElement(
+                    'a',{
+                        href:'#grid'
+                    },                   
+                    'Pro Version'
                 )
             )
-
-
+        )
+    ),
+    React.createElement(
+        'div',{
+            className:'nav-right-part nav-right-part-desktop'
+        },
+        React.createElement(
+            'div',{
+                className:'menu-search-inner'
+            },
+            React.createElement(
+                'input',{
+                    type:'text',
+                    placeholder:'Search...'
+                }
+            ),
+            React.createElement(
+                'button',{
+                    type:'submit',
+                    className:'submit-btn'
+                },
+                React.createElement(
+                    'i',{
+                        className:'fa fa-search'
+                    }
+                )
+            )
         )
     )
-
 )
 
-ReactDOM.render(nav, navbar);
+ReactDOM.render(nav,navbar);
