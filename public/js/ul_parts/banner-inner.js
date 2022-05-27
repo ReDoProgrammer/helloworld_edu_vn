@@ -1,9 +1,6 @@
-const banner = document.getElementById('banner');
+const banner_inner = document.getElementById('banner-inner');
 
-const bn = React.createElement(
-  'div',{
-      className:'banner-inner pt-5'
-  },
+const bni = 
   React.createElement(
       'div',{
           className:'container'
@@ -79,6 +76,6 @@ const bn = React.createElement(
           )
       )
   )
-)
 
-ReactDOM.render(bn,banner);
+
+ReactDOM.render(bni,banner_inner);
