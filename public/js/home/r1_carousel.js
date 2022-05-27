@@ -1,4 +1,5 @@
 const r1_carousel = ReactDOM.createRoot(document.getElementById("r1_carousel"));
+
 r1_carousel.render(
   <React.StrictMode>
      <div className="row" >
