@@ -1,8 +1,69 @@
-const r1_carousel = ReactDOM.createRoot(document.getElementById("r1_carousel"));
+const carousel = React.createElement(
+    'div', {
+    className: 'row'
+},
+    React.createElement(
+        'div', {
+        className: 'col-lg-3 col-sm-6'
+    },
+        React.createElement(
+            'div', {
+            className: 'single-post-wrap style-white'
+        },
+            React.createElement(
+                'div', {
+                className: 'thumb'
+            },
+                React.createElement(
+                    'img', {
+                    src: 'assets/img/post/1.png',
+                    alt: 'img'
+                }
+                )
+            ),
+            React.createElement(
+                'div', {
+                className: 'details'
+            },
+                React.createElement(
+                    'h6', {
+                    className: 'title'
+                },
+                    React.createElement(
+                        'a', {
+                        href: '#',
 
-r1_carousel.render(
-  <React.StrictMode>
-     <div className="row" >
+                    },
+                        'The FAA will test drone detecting technologies in airports this year'
+                    )
+                ),
+                React.createElement(
+                    'div', {
+                    className: 'post-meta-single mt-3'
+                },
+                    React.createElement(
+                        'ul', {},
+                        React.createElement(
+                            'li', {},
+                            React.createElement(
+                                'i', {
+                                className: 'fa fa-clock-o'
+                            },
+                                '08.22.2020'
+                            )
+                        )
+                    )
+                )
+            )
+        )
+
+    )
+)
+
+const r1_carousel = document.getElementById('r1_carousel');
+ReactDOM.render(carousel, r1_carousel)
+
+{/* <div className="row" >
         <div className="col-lg-3 col-sm-6">
             <div className="single-post-wrap style-white">
                 <div className="thumb">
@@ -67,7 +128,4 @@ r1_carousel.render(
                 </div>
             </div>
         </div>
-    </div>
-  </React.StrictMode>
-);
-
+    </div> */}
