@@ -2,7 +2,9 @@ const postsList = [
     {
         thumb: {
             src: 'assets/img/post/1.png',
-            header: 'Tech'
+            header: 'Tech', 
+            class:'tag-base tag-blue'         
+            
         },
         detail: {
             title: 'The FAA will test drone detecting technologies in airports this year',
@@ -12,7 +14,8 @@ const postsList = [
     {
         thumb: {
             src: 'assets/img/post/2.png',
-            header: 'Food'
+            header: 'Food',
+            class:'tag-base tag-orange'
         },
         detail: {
             title: 'Rocket Lab will resume launches no sooner than August 27th',
@@ -22,7 +25,8 @@ const postsList = [
     {
         thumb: {
             src: 'assets/img/post/3.png',
-            header: 'Food'
+            header: 'Food',
+            class:'tag-base tag-blue'         
         },
         detail: {
             title: 'Google Drive flaw may attackers fool you into install malware',
@@ -32,7 +36,8 @@ const postsList = [
     {
         thumb: {
             src: 'assets/img/post/4.png',
-            header: 'Tech'
+            header: 'Tech',
+            class:'tag-base tag-orange'
         },
         detail: {
             title: 'TikTok will sue the US over threatened ban',
@@ -68,7 +73,7 @@ const carousel = React.createElement(
                         ),
                         React.createElement(
                             'a',{
-                                className:'tag-base tag-blue'
+                                className:p.thumb.class
                             },
                             p.thumb.header
                         )
